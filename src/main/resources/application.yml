@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    pune:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/jewellery_pune?createDatabaseIfNotExist=true
+      username: root
+      password: Sush@2004
+    mumbai:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/jewellery_mumbai?createDatabaseIfNotExist=true
+      username: root
+      password: Sush@2004
+
+server:
+  port: 8080
